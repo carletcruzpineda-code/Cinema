@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar estilo cartelera */
+.sidebar {
+  width: 250px;
+  background-color: #2c0000; /* Rojo burdeos oscuro */
+  padding: 20px;
+  color: #ffd700; /* Dorado / amarillo cartelera */
+  position: fixed;
+  height: 100vh;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar h2 {
+  font-size: 1.8em;
+  text-align: center;
+  border-bottom: 2px solid #ffd700;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ffffff;
+}
+
+/* Contenedor principal */
+.contenedor {
+  margin-left: 270px; /* espacio para la sidebar */
+  padding: 40px;
+  width: calc(100% - 270px);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ffd700;
+  text-shadow: 1px 1px 5px #000;
+}
+
+/* Formulario */
+#formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+#formulario input, #formulario button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+#formulario input {
+  background-color: #333;
+  color: #fff;
+}
+
+#formulario button {
+  background-color: #ffd700;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#formulario button:hover {
+  background-color: #ffaa00;
+}
+
+/* Contenedor de Películas */
+#contenedorPeliculas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.pelicula {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.2s;
+}
+
+.pelicula:hover {
+  transform: scale(1.05);
+}
+
+.pelicula img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #ff004f;
+  text-align: center;
+  margin-bottom: 25px;
+  text-shadow:
+    0 0 5px #ff004f,
+    0 0 10px #ff004f,
+    0 0 20px #ff004f,
+    0 0 40px #ff004f,
+    0 0 80px #ff004f;
+  animation: flicker 2s infinite;
+}
+
