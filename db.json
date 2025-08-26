@@ -1,3 +1,11 @@
 {
-    "peliculas" :[]
+  "peliculas": [
+    {
+      "id": "6db5",
+      "titulo": "hotel",
+      "poster": "https://tse2.mm.bing.net/th/id/OIP.H88aKb7tUCF3XycKwqHjFgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
+      "genero": "d",
+      "anio_lanzamiento": 1
+    }
+  ]
 }
