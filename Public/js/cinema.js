@@ -6,8 +6,8 @@ const btnAgregar = document.getElementById("btnAgregar");
 // Inputs del formulario según tus IDs
 const inputTitulo = document.getElementById("Search");
 const inputPoster = document.getElementById("poster");
-const inputGenero = document.getElementById("film genre");
-const inputAnio = document.getElementById("release year");
+const inputGenero = document.getElementById("filmgenre");
+const inputAnio = document.getElementById("releaseyear");
 
 // Mostrar películas en tarjetas
 async function mostrarPeliculas() {
