@@ -21,10 +21,10 @@ async function mostrarPeliculas() {
   }
 
   peliculas.forEach(function(peli) {
-    var tarjeta = document.createElement("div");
+    let tarjeta = document.createElement("div");
     tarjeta.classList.add("tarjeta");
 
-    var contenido = '<img src="' + peli.poster + '" alt="' + peli.titulo + '">' +
+    let contenido = '<img src="' + peli.poster + '" alt="' + peli.titulo + '">' +
                     '<h3>' + peli.titulo + '</h3>' +
                     '<p><b>Género:</b> ' + peli.genero + '</p>' +
                     '<p><b>Año:</b> ' + peli.anio_lanzamiento + '</p>';
@@ -36,7 +36,7 @@ async function mostrarPeliculas() {
 
 // Evento para agregar películas
 btnAgregar.addEventListener("click", async function() {
-  var nuevaPelicula = {
+  let nuevaPelicula = {
     titulo: inputTitulo.value.trim(),
     poster: inputPoster.value.trim(),
     genero: inputGenero.value.trim(),
