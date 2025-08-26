@@ -12,13 +12,16 @@ async function agregarPelicula(pelicula) {
   try {
     const respuesta = await fetch("http://localhost:3001/peliculas", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify(pelicula)
     });
-    return await respuesta.json();
+
+    const datos = await respuesta.json();
+    console.log("Película agregada:", datos);
   } catch (error) {
-    console.error("Error al agregar película:", error);
+    console.log("Hubo un error:", error);
   }
 }
-
 export { obtenerPeliculas, agregarPelicula };
